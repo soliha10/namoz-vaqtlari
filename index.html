@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./main.css" />
+  <title>Namoz Vaqtlari</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__inner">
+        <a class="header__logo" href="/">
+          <!-- <img src="./images/logo.png" alt="logo" /> -->
+        </a>
+        <nav class="header__nav">
+          <ul class="nav__list">
+            <li class="nav__item"><a class="nav__link" href="/">Namoz Vaqtlari</a></li>
+            <li class="nav__item"><a class="nav__link" href="/">Namoz Darslari</a></li>
+            <li class="nav__item"><a class="nav__link" href="/">Savol Javoblar</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <section class="location-section">
+      <div class="container">
+        <div class="location__inner">
+          <h1 class="location__title">Hududlar</h1>
+          <time class="location__timer" datetime="2024-05-27T9:00"></time>
+          <form class="search-form">
+            <div class="form__group">
+              <select id="date-format" class="form__select">
+                <option value="day">Kun</option>
+                <option value="week">Hafta</option>
+                <option value="monthly">Oy</option>
+              </select>
+            </div>
+            <input type="text" class="form__input" placeholder="Qidirish..." aria-label="qidirish" />
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="times-section">
+      <div class="container">
+        <div class="times__inner">
+          <header class="times__header">
+            <h2 class="times__title">Namoz vaqtlari <span class="times__location">Toshkent</span> vaqti bo'yicha</h2>
+            <time class="times__date">2024 yil 25-may, shanba</time>
+          </header>
+          <ul class="prayer-times-list"></ul>
+          <h2 class="table-title"></h2>
+          <table class="prayer-times-table">
+            <thead>
+              <tr>
+                <th>Num</th>
+                <th>Hafta</th>
+                <th>Sana</th>
+                <th>Bomdod</th>
+                <th>Quyosh</th>
+                <th>Peshin</th>
+                <th>Asr</th>
+                <th>Shom</th>
+                <th>Xufton</th>
+              </tr>
+            </thead>
+            <tbody class="table-body"></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="./main.js"></script>
+</body>
+
+</html>
